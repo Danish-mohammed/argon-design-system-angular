@@ -1,0 +1,39 @@
+/* card.component.css */
+
+/* Default styles for the card */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  float: left; /* Ensure cards are displayed in a row */
+}
+
+/* Styles for small screens (up to 768px) */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Make cards full-width on small screens */
+  }
+}
+
+/* Styles for medium screens (between 769px and 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .card {
+    width: 48%; /* Display two cards per row */
+  }
+}
+
+/* Styles for large screens (above 992px) */
+@media (min-width: 993px) {
+  .card {
+    width: 23%; /* Display four cards per row */
+  }
+}
+/* app.component.css */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
